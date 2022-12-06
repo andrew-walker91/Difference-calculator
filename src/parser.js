@@ -1,6 +1,6 @@
 import yaml from 'js-yaml';
 
 // Выбираем и запускаем парсер
-const parsers = { json: JSON.parse, yaml: yaml.safeLoad, yml: yaml.safeLoad };
+const parsers = { json: JSON.parse, yaml: yaml.load, yml: yaml.load };
 
 export default (data, dataFormat) => parsers[dataFormat](data);

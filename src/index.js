@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import genDiff from './gendiff.js';
 import parser from './parser.js';
-import format from './formatters/formatters.js';
+import format from './formatters/index.js';
 
 export default (filepath1, filepath2, formatName = 'stylish') => {
   // Преобразуем пути до файлов в абсолютные
