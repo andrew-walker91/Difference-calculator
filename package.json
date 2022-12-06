@@ -6,6 +6,9 @@
   "bin": {
     "gendiff": "bin/gendiff.js"
   },
+  "engines": {
+    "node": ">=14"
+  },
   "scripts": {
     "test": "npx jest"
   },
@@ -26,9 +29,12 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
+    "@jest/globals": "^29.3.1",
+    "@types/jest": "^29.2.4",
     "eslint": "^8.29.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^27.1.6",
     "jest": "^29.3.1"
   }
 }
