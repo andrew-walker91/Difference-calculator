@@ -9,3 +9,11 @@ publish:
 
 lint:
 	npx eslint .
+
+tests:
+	npm test -- --coverage --coverageProvider=v8
+
+test-coverage:
+	npm test --coverage
+
+	.PHONY: test
