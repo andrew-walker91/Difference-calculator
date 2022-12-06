@@ -1,4 +1,4 @@
-name: my-check
+name: linter & tests
 
 on:
   - push
@@ -14,16 +14,25 @@ jobs:
       matrix:
         node-version: [18.x]
     steps:
-      - uses: actions/checkout@v2
+      - name: clone my repo
+        uses: actions/checkout@v2
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - run: make install
-      - run: make lint
-      - run: make tests
-      - name: Test & publish code coverage
+
+      - name: INSTALL
+        run: make install
+
+      - name: RUN LINTER
+      run: make lint
+
+      - name: RUN TESTS
+      run: make tests
+
+      - name: test & publish code coverage
         uses: paambaati/codeclimate-action@v3.0.0
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
