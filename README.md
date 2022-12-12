@@ -10,7 +10,7 @@ Hello! My name is Andrey Gulayakin and this is my second **frontend** project on
 
 Clone this repository on your machine in the project directory.
 
-`git clone git@github.com:andrew-walker91/frontend-project-44.git`
+`git clone git@github.com:andrew-walker91/frontend-project-46.git`
 
 `make install`
 
@@ -26,5 +26,20 @@ This program calculates the difference between two **_json_** or **_yaml(yml)_**
 
 ## Demonstration:
 
+• **Installation** from the local repository and **output help information**:
+[![asciicast](https://asciinema.org/a/x64TtjjrSINns2FkHy0INHLlc.svg)](https://asciinema.org/a/x64TtjjrSINns2FkHy0INHLlc)
 
+• **Comparing json and yaml files** and making output in **stylish format** (default):
+[![asciicast](https://asciinema.org/a/g2lwL5gQ4WDzio6TauH8LDXhG.svg)](https://asciinema.org/a/g2lwL5gQ4WDzio6TauH8LDXhG)
 
+• **Comparing yaml and json files** and making output in **plain format**:
+[![asciicast](https://asciinema.org/a/qJbQRe3gc3LyVxuZViltE8Xqe.svg)](https://asciinema.org/a/qJbQRe3gc3LyVxuZViltE8Xqe)
+
+• **Comparing yaml and yml files** and making output in **json format**:
+[![asciicast](https://asciinema.org/a/iRVMugYuMDaGtJC08MEUqJK5o.svg)](https://asciinema.org/a/iRVMugYuMDaGtJC08MEUqJK5o)
+
+make install
+
+npm link
+
+gendiff -h
