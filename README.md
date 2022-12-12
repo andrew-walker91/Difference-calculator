@@ -27,7 +27,7 @@ This program calculates the difference between two **_json_** or **_yaml(yml)_**
 ## Demonstration:
 
 • **Installation** from the local repository and **output help information**:
-[![asciicast](https://asciinema.org/a/x64TtjjrSINns2FkHy0INHLlc.svg)](https://asciinema.org/a/x64TtjjrSINns2FkHy0INHLlc)
+[![asciicast](https://asciinema.org/a/F6vqHc2xrfyCfeXGfVGbfzMIR.svg)](https://asciinema.org/a/F6vqHc2xrfyCfeXGfVGbfzMIR)
 
 • **Comparing json and yaml files** and making output in **stylish format** (default):
 [![asciicast](https://asciinema.org/a/g2lwL5gQ4WDzio6TauH8LDXhG.svg)](https://asciinema.org/a/g2lwL5gQ4WDzio6TauH8LDXhG)
@@ -37,9 +37,3 @@ This program calculates the difference between two **_json_** or **_yaml(yml)_**
 
 • **Comparing yaml and yml files** and making output in **json format**:
 [![asciicast](https://asciinema.org/a/iRVMugYuMDaGtJC08MEUqJK5o.svg)](https://asciinema.org/a/iRVMugYuMDaGtJC08MEUqJK5o)
-
-make install
-
-npm link
-
-gendiff -h
