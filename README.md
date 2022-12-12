@@ -4,6 +4,8 @@
 # Difference calculator
 Hello! My name is Andrey Gulayakin and this is my second **frontend** project on [Hexlet](https://ru.hexlet.io/pages/about).
 
+![meme](https://i.ytimg.com/vi/OLerLvqgN3A/maxresdefault.jpg)
+
 ## Installation:
 
 
