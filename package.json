@@ -10,7 +10,7 @@
     "node": ">=14"
   },
   "scripts": {
-    "test": "npx jest"
+    "test": "npx jest --coverage"
   },
   "repository": {
     "type": "git",
