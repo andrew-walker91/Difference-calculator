@@ -32,7 +32,7 @@ This program calculates the difference between two **_json_** or **_yaml(yml)_**
 [![asciicast](https://asciinema.org/a/F6vqHc2xrfyCfeXGfVGbfzMIR.svg)](https://asciinema.org/a/F6vqHc2xrfyCfeXGfVGbfzMIR)
 
 • **Comparing json and yaml files** and making output in **stylish format** (default):
-[![asciicast](https://asciinema.org/a/g2lwL5gQ4WDzio6TauH8LDXhG.svg)](https://asciinema.org/a/g2lwL5gQ4WDzio6TauH8LDXhG)
+[![asciicast](https://asciinema.org/a/jA9PCEXuIwPdqmJxNXF3aChxP.svg)](https://asciinema.org/a/jA9PCEXuIwPdqmJxNXF3aChxP)
 
 • **Comparing yaml and json files** and making output in **plain format**:
 [![asciicast](https://asciinema.org/a/qJbQRe3gc3LyVxuZViltE8Xqe.svg)](https://asciinema.org/a/qJbQRe3gc3LyVxuZViltE8Xqe)
