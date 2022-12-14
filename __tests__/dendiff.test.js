@@ -15,29 +15,26 @@ const getFixturePath = (filename) => join(dirPath, '..', '__fixtures__', filenam
 
 // Читаем фикстуры
 const readFile = (filename) => fs.readFileSync(getFixturePath(filename), 'utf-8');
-const expectedStylish = readFile('expected-stylish.txt');
-const expectedPlain = readFile('expected-plain.txt');
-const expectedJson = readFile('expected-json.txt');
 
 test.each([
   // JSON
-  ['__fixtures__/file1.json', '__fixtures__/file2.json', 'stylish', expectedStylish],
-  ['__fixtures__/file1.json', '__fixtures__/file2.json', 'plain', expectedPlain],
-  ['__fixtures__/file1.json', '__fixtures__/file2.json', 'json', expectedJson],
+  ['__fixtures__/file1.json', '__fixtures__/file2.json', 'stylish', 'expected-stylish.txt'],
+  ['__fixtures__/file1.json', '__fixtures__/file2.json', 'plain', 'expected-plain.txt'],
+  ['__fixtures__/file1.json', '__fixtures__/file2.json', 'json', 'expected-json.txt'],
 
   // YAML and YML
-  ['__fixtures__/file1.yaml', '__fixtures__/file2.yaml', 'stylish', expectedStylish],
-  ['__fixtures__/file1.yaml', '__fixtures__/file2.yaml', 'plain', expectedPlain],
-  ['__fixtures__/file1.yaml', '__fixtures__/file2.yaml', 'json', expectedJson],
+  ['__fixtures__/file1.yaml', '__fixtures__/file2.yaml', 'stylish', 'expected-stylish.txt'],
+  ['__fixtures__/file1.yaml', '__fixtures__/file2.yaml', 'plain', 'expected-plain.txt'],
+  ['__fixtures__/file1.yaml', '__fixtures__/file2.yaml', 'json', 'expected-json.txt'],
 
   // CROSSED
-  ['__fixtures__/file1.json', '__fixtures__/file2.yaml', 'stylish', expectedStylish],
-  ['__fixtures__/file1.yaml', '__fixtures__/file2.json', 'plain', expectedPlain],
-  ['__fixtures__/file1.json', '__fixtures__/file2.yaml', 'json', expectedJson],
+  ['__fixtures__/file1.json', '__fixtures__/file2.yaml', 'stylish', 'expected-stylish.txt'],
+  ['__fixtures__/file1.yaml', '__fixtures__/file2.json', 'plain', 'expected-plain.txt'],
+  ['__fixtures__/file1.json', '__fixtures__/file2.yaml', 'json', 'expected-json.txt'],
 
 ])('Diff test (%#)', (filepath1, filepath2, formatName, expectedFile) => {
   const recieved = genDiff(filepath1, filepath2, formatName);
-  const expected = expectedFile;
+  const expected = readFile(expectedFile);
 
   expect(recieved).toEqual(expected);
 });
