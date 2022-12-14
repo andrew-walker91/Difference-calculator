@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/andrew-walker91/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/andrew-walker91/frontend-project-46/actions)",
+  "description": "Shows the difference between 2 configuration files in 3 output formats",
   "main": "src/index.js",
   "bin": {
     "gendiff": "bin/gendiff.js"
