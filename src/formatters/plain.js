@@ -1,7 +1,6 @@
 import _ from 'lodash';
 
-// Вспомогательная функция для обработки значений
-const valueFormatter = (value) => {
+const getFormattedValue = (value) => {
   if (!_.isObject(value)) {
     const formattedValue = _.isString(value) ? `'${value}'` : `${value}`;
     return formattedValue;
@@ -10,23 +9,22 @@ const valueFormatter = (value) => {
   return '[complex value]';
 };
 
-// Функция формирует plain-вывод в консоль на основе результата из genDiff
-const formatter = (data) => {
-  const innerFormatter = (innerData, path = []) => {
+export default (data) => {
+  const iter = (innerData, path = []) => {
     const formattedData = innerData.map((node) => {
       const pathElements = [...path, node.name];
       const actualPath = pathElements.join('.');
       if (node.type === 'ADDED') {
-        return `Property '${actualPath}' was added with value: ${valueFormatter(node.value)}`;
+        return `Property '${actualPath}' was added with value: ${getFormattedValue(node.value)}`;
       }
       if (node.type === 'REMOVED') {
         return `Property '${actualPath}' was removed`;
       }
       if (node.type === 'CHANGED') {
-        return `Property '${actualPath}' was updated. From ${valueFormatter(node.oldValue)} to ${valueFormatter(node.newValue)}`;
+        return `Property '${actualPath}' was updated. From ${getFormattedValue(node.oldValue)} to ${getFormattedValue(node.newValue)}`;
       }
-      if (node.type === 'PARENT') {
-        return `${innerFormatter(node.children, pathElements)}`;
+      if (node.type === 'NESTED') {
+        return `${iter(node.children, pathElements)}`;
       }
       if (node.type === 'UNCHANGED') {
         return null;
@@ -38,7 +36,5 @@ const formatter = (data) => {
     return `${formattedData.join('\n')}`;
   };
 
-  return innerFormatter(data);
+  return iter(data);
 };
-
-export default formatter;
