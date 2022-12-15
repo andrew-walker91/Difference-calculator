@@ -19,7 +19,7 @@ const genDiff = (obj1, obj2) => {
     }
     if (_.isPlainObject(obj1[key]) && _.isPlainObject(obj2[key])) {
       return {
-        name: key, type: 'PARENT', children: genDiff(obj1[key], obj2[key]),
+        name: key, type: 'NESTED', children: genDiff(obj1[key], obj2[key]),
       };
     }
     if (obj1[key] !== obj2[key]) {
