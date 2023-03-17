@@ -2,7 +2,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/c91c10940931c9bf9c79/maintainability)](https://codeclimate.com/github/andrew-walker91/frontend-project-46/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/c91c10940931c9bf9c79/test_coverage)](https://codeclimate.com/github/andrew-walker91/frontend-project-46/test_coverage)
 
 # Difference calculator
-Hello! My name is Andrey Gulayakin and this is my second **frontend** project on [Hexlet](https://ru.hexlet.io/pages/about).
+Hello! My name is Andrey Gulyaykin and this is my second **frontend** project on [Hexlet](https://ru.hexlet.io/pages/about).
 
 ![meme](https://i.ytimg.com/vi/OLerLvqgN3A/maxresdefault.jpg)
 
