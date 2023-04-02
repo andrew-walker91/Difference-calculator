@@ -8,34 +8,45 @@ Hello! My name is Andrey Gulyaykin and this is my second **frontend** project on
 
 ## Installation:
 
-
-
-Clone this repository on your machine in the project directory.
-
-`git clone git@github.com:andrew-walker91/frontend-project-46.git`
-
-`make install`
-
-`npm link`
-
-Implied that you have already installed **Node.js 13+** 🤓
-
+Just 3 commands for a quick start
+```
+git clone git@github.com:andrew-walker91/Difference-calculator
+make install
+npm link
+```
 
 ## How to use:
 
+This program calculates the difference between two **_json_** or **_yaml(yml)_** structures and outputs the report to the console.
 
-This program calculates the difference between two **_json_** or **_yaml(yml)_** structures and outputs the report to the console. Write in your console `gendiff` + **_2 paths to files_** you want to compare. You can optionally choose one of three formatters: `stylish`(used by default), `plain` or `json`.
+Write in your console `gendiff` + **_2 paths to files_** you want to compare. 
+
+You can optionally choose one of three formatters: 
+
+`stylish`(used by default),
+
+`plain`,
+
+`json`.
 
 ## Demonstration:
 
 • **Installation** from the local repository and **output help information**:
+
+
 [![asciicast](https://asciinema.org/a/F6vqHc2xrfyCfeXGfVGbfzMIR.svg)](https://asciinema.org/a/F6vqHc2xrfyCfeXGfVGbfzMIR)
 
 • **Comparing json and yaml files** and making output in **stylish format** (default):
+
+
 [![asciicast](https://asciinema.org/a/jA9PCEXuIwPdqmJxNXF3aChxP.svg)](https://asciinema.org/a/jA9PCEXuIwPdqmJxNXF3aChxP)
 
 • **Comparing yaml and json files** and making output in **plain format**:
+
+
 [![asciicast](https://asciinema.org/a/qJbQRe3gc3LyVxuZViltE8Xqe.svg)](https://asciinema.org/a/qJbQRe3gc3LyVxuZViltE8Xqe)
 
 • **Comparing yaml and yml files** and making output in **json format**:
+
+
 [![asciicast](https://asciinema.org/a/iRVMugYuMDaGtJC08MEUqJK5o.svg)](https://asciinema.org/a/iRVMugYuMDaGtJC08MEUqJK5o)
